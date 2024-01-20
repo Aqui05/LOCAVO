@@ -12,49 +12,49 @@
                 <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                     <div class="card" style="border-radius: 15px;">
                         <div class="card-body p-4 h-50">
-                            <h2 class="text-uppercase text-center mb-4">Create an account</h2>
+                            <h2 class="text-uppercase text-center mb-4">Créer un compte</h2>
 
                             <form action="{{ route('auth.register') }}" method="POST" class="vstack gap-3">
                                 @csrf
 
                                 <div class="form-outline mb-3">
                                 <input type="text" id="name" name="name" class="form-control form-control-lg" />
-                                <label class="form-label" for="name">Your Name</label>
+                                <label class="form-label" for="name">Nom & Prénoms</label>
                                 </div>
 
                                 <div class="form-outline mb-3">
                                 <input type="email" id="email" name="email" class="form-control form-control-lg" />
-                                <label class="form-label" for="email">Your Email</label>
+                                <label class="form-label" for="email">Adresse Email</label>
                                 </div>
 
                                 <div class="form-outline mb-3">
                                 <input type="password" id="password" name="password"
                                     class="form-control form-control-lg" />
-                                <label class="form-label" for="password">Password</label>
+                                <label class="form-label" for="password">Mot de passe</label>
                                 </div>
 
                                 <div class="form-outline mb-3">
                                 <input type="password" id="password_confirmation"
                                 name="password_confirmation" class="form-control form-control-lg" />
-                                <label class="form-label" for="password_confirmation">Repeat your password</label>
+                                <label class="form-label" for="password_confirmation">Confirmer votre mot de passe</label>
                                 </div>
 
                                 <div class="form-check d-flex justify-content-center mb-4">
                                 <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
                                 <label class="form-check-label" for="form2Example3g">
-                                    I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                                    Vous acceptez tous les <a href="#!" class="text-body"><u>Termes d'utilisation</u></a>
                                 </label>
                                 </div>
 
                                 <div class="d-flex justify-content-center">
                                 <button type="submit"
                                     class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">
-                                    Register</button>
+                                    S'enregister</button>
                                 </div>
 
-                                <p class="text-center text-muted mt-4 mb-0">Have already an account?
+                                <p class="text-center text-muted mt-4 mb-0">Vous aviez déja un compte ?
                                     <a href="{{ route("auth.login") }}" class="fw-bold text-body">
-                                        <u>Login here</u></a></p>
+                                        <u>Se connecter ici</u></a></p>
                             </form>
                         </div>
                     </div>

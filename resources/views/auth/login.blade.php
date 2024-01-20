@@ -21,35 +21,35 @@
                                         <span class="h1 fw-bold mb-0">LOCAVO</span>
                                     </div>
                                     <h5 class="fw-normal mb-2 pb-2" style="letter-spacing: 1px; font-size: 1.2rem;">
-                                        Sign into your account
+                                        Connexion à votre compte
                                     </h5>
                                     <div class="form-outline mb-3">
                                         <input type="email" id="email" class="form-control form-control-lg" name="email" value="{{ old('email') }}" />
-                                        <label class="form-label" for="email">Email address</label>
+                                        <label class="form-label" for="email">Addresse email</label>
                                         @error("email")
                                             <div class="text-danger">{{ $message }}</div>
                                         @enderror
                                     </div>
                                     <div class="form-outline mb-3">
                                         <input type="password" id="password" class="form-control form-control-lg" name="password" />
-                                        <label class="form-label" for="password">Password</label>
+                                        <label class="form-label" for="password">Mot de passe</label>
                                         @error("password")
                                             <div class="text-danger">{{ $message }}</div>
                                         @enderror
                                     </div>
                                     <div class="pt-1 mb-3">
-                                        <button class="btn btn-dark btn-block" type="submit">Login</button>
+                                        <button class="btn btn-dark btn-block" type="submit">Se connecter</button>
                                         @if(session('error'))
                                             <div class="alert alert-danger mt-2">
                                                 {{ session('error') }}
                                             </div>
                                         @endif
                                     </div>
-                                    <a class="small text-muted" href="#!">Forgot password?</a>
-                                    <p class="mb-2 pb-lg-1" style="color: #393f81;">Don't have an account?
-                                        <a href="{{ route('auth.register') }}" style="color: #393f81;">Register here</a>
+                                    <a class="small text-muted" href="#!">Mt de passe oublié ?</a>
+                                    <p class="mb-2 pb-lg-1" style="color: #393f81;">Vous n'aviez pas de compte ?
+                                        <a href="{{ route('auth.register') }}" style="color: #393f81;">Créer un nouveau compte</a>
                                     </p>
-                                    <a href="#!" class="small text-muted">Terms of use.</a>
+                                    <a href="#!" class="small text-muted">Termes d'utilisation.</a>
                                     <a href="#!" class="small text-muted">Privacy policy</a>
                                 </form>
                             </div>
