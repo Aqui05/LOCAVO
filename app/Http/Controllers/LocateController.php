@@ -95,7 +95,8 @@ public function destroy(Location $location)
 
         return redirect()->route('locations.show')->with('success', 'Location annulée avec succès');
     } else {
-        return redirect()->route('locations.show',$location->id)->with('error', 'La location ne peut pas être annulée.');
+        return redirect()->route('locations.show',$location->id)
+            ->with('error', 'La location ne peut pas être annulée.');
     }
 }
 
@@ -186,7 +187,6 @@ public function history()
         $totalUsers = User::count();
 
         $users = User::where('role', '!=', 'admin')->get();
-        //$users = User::selectRaw('count(*) as count, role')->groupBy('role')->get();
 
         return view('locations.list-user')
             ->with('totalUsers', $totalUsers)

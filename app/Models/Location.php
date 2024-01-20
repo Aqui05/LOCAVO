@@ -25,12 +25,6 @@ class Location extends Model
         return $this->belongsTo(User::class);
     }
 
-    // Relation with le car
-    /*public function car()
-    {
-        return $this->belongsToMany (Car::class);
-    }*/
-
 protected static function booted()
 {
     static::creating(function ($location) {
