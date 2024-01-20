@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>@yield('title')</title>
+</head>
+<body>
+    
+    <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+    @auth
+        {{ Auth::user()->name }}
+        <form class="nav-item" action="{{ route('auth.logout') }}" method="post">
+            @method("delete")
+            @csrf
+            <button class="nav-link">Se déconnecter</button>
+        </form>
+    @endauth
+    @guest
+        <div class="nav-item">
+            <a class="nav-link" href="{{ route('auth.login') }}">Se connecter</a>
+            <a class="nav-link" href="{{ route('auth.register') }}">S'inscrire</a>
+        </div>
+    @endguest
+</div>
+
+</body>
+</html>

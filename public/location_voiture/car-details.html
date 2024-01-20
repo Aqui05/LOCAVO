@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails de la Voiture</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="car-details.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <header>
+        <div id="header-content">
+            <span id="site-name">LOCAVO</span>
+            <nav>
+                <ul id="menu">
+                    <!-- Le contenu du menu sera généré dynamiquement par JavaScript -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="car-details">
+            <h2>Détails de la Voiture</h2>
+            <div id="car-info">
+                <!-- Informations détaillées sur la voiture -->
+                <h3>Modèle : AUDI</h3>
+                <p>Marque: Marque1</p>
+                <p>Plaque d'immatriculation: ABC123</p>
+                <p>Statut de location: Disponible</p>
+                <p>Tarif de location: 10 000 FCFA par jour</p>
+            </div>
+
+            <section id="rental-options">
+                <!-- Options de location -->
+                <h2>Options de Location</h2>
+                <!-- Ajoutez les éléments nécessaires pour spécifier la durée, la date de début, etc. -->
+                <label for="rental-duration">Durée de la location (en jours) :</label>
+                <input type="number" id="rental-duration" name="rental-duration" required>
+
+                <label for="start-date">Date de début :</label>
+                <input type="date" id="start-date" name="start-date" required>
+                <!-- Ajoutez d'autres détails spécifiques à la location si nécessaire -->
+
+                <button onclick="calculateRentalPrice()">Calculer le Prix</button>
+            </section>
+
+            <section id="price-details">
+                <!-- Prix de la location -->
+                <h2>Prix de la Location</h2>
+                <p id="estimated-price">Coût estimé : </p>
+                <button onclick="confirmRental()">Confirmer la Location</button>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 <strong>LOCAVO</strong></p>
+    </footer>
+
+    <script src="car-details.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="header-content">
+        <span id="site-name">LOCAVO</span>
+        <!-- Menu dynamique en fonction du type d'utilisateur -->
+        <nav>
+            <ul id="menu">
+                <!-- Le contenu du menu sera généré dynamiquement par JavaScript -->
+            </ul>
+        </nav>
+    </div>
+
+    <div id="login-form">
+        <h1>Connexion</h1>
+        <form id="login-form">
+            <label for="loginIdentifier">Adresse email:</label>
+            <input type="text" id="loginIdentifier" name="loginIdentifier" required>
+
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="checkbox" id="rememberMe" name="rememberMe">
+            <label class="logincen" for="rememberMe">Se souvenir de moi</label>
+
+            <a href="forgot-password.html">Mot de passe oublié ?</a>
+
+            <button type="submit">Se connecter</button>
+        </form>
+
+        <p class="logincen">Vous n'avez pas de compte ? <a href="register.html">Inscrivez-vous</a></p>
+    </div>
+ 
+    <footer>
+        <!-- Pied de page commun à toutes les pages -->
+        <p>&copy; 2024 <strong>LOCAVO</strong></p>
+    </footer>
+</body>
+</html>

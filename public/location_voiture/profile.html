@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Utilisateur</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <header>
+        <div id="header-content">
+            <span id="site-name">LOCAVO</span>
+            <nav>
+                <ul id="menu">
+                    <!-- Le contenu du menu sera généré dynamiquement par JavaScript -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="profile-form">
+        <h2>Modifier le Profil</h2>
+        <form id="profile-update-form">
+            <label for="firstName">Prénom:</label>
+            <input type="text" id="firstName" name="firstName">
+
+            <label for="lastName">Nom:</label>
+            <input type="text" id="lastName" name="lastName">
+
+            <label for="email">Adresse email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="phone">Numéro de téléphone:</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label for="address">Adresse:</label>
+            <input type="text" id="address" name="address">
+
+            <label for="birthdate">Date de naissance:</label>
+            <input type="date" id="birthdate" name="birthdate">
+
+            <label for="license">Permis de conduire:</label>
+            <input type="text" id="license" name="license">
+
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="password" name="password">
+
+            <label for="confirmPassword">Confirmer le mot de passe:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword">
+
+            <button type="submit">Enregistrer les modifications</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 <strong>LOCAVO</strong></p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

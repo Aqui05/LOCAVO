@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="header-content">
+        <span id="site-name">LOCAVO</span>
+        <!-- Menu dynamique en fonction du type d'utilisateur -->
+        <nav>
+            <ul id="menu">
+                <!-- Le contenu du menu sera généré dynamiquement par JavaScript -->
+            </ul>
+        </nav>
+    </div>
+
+    <div id="registration-form">
+        <h1>Inscription</h1>
+        <form id="register-form">
+            <label for="firstName">Prénom:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Nom:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Adresse email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Numéro de téléphone:</label>
+            <input type="tel" id="phone" name="phone" value="+229 90258177" required>
+            
+        
+            <label for="address">Adresse:</label>
+            <input type="text" id="address" name="address">
+
+            <label for="birthdate">Date de naissance:</label>
+            <input type="date" id="birthdate" name="birthdate">
+
+            <label for="license">Permis de conduire:</label>
+            <input type="text" id="license" name="license" required>
+
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirmPassword">Confirmer le mot de passe:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <input type="checkbox" id="acceptConditions" name="acceptConditions" required>
+            <label for="acceptConditions">J'accepte les conditions générales et la politique de confidentialité</label>
+            
+
+            <button type="submit">S'inscrire</button>
+        </form>
+
+        <p>Déjà inscrit ? <a href="login.html">Connectez-vous</a></p>
+    </div>
+    <footer>
+        <!-- Pied de page commun à toutes les pages -->
+        <p>&copy; 2024 <strong>LOCAVO</strong></p>
+    </footer>
+
+</body>
+</html>

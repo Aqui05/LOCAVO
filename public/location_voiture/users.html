@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Utilisateurs</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <header>
+        <div id="header-content">
+            <span id="site-name">LOCAVO</span>
+            <nav>
+                <ul id="menu">
+                    <!-- Le contenu du menu sera généré dynamiquement par JavaScript -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="user-management">
+        <h2>Gestion des Utilisateurs</h2>
+
+        <!-- Bouton pour ajouter un nouvel utilisateur -->
+        <button onclick="showAddUserForm()">Ajouter un Nouvel Utilisateur</button>
+
+        <!-- Tableau pour afficher la liste des utilisateurs -->
+        <table id="user-table">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Email</th>
+                    <th>Téléphone</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Les lignes de tableau seront générées dynamiquement par JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- Formulaire pour ajouter un nouvel utilisateur (initialement caché) -->
+        <div id="add-user-form" style="display: none;">
+            <h3>Ajouter un Nouvel Utilisateur</h3>
+            <form onsubmit="addUser(); return false;">
+                <label for="newUserName">Nom:</label>
+                <input type="text" id="newUserName" required>
+
+                <label for="newUserEmail">Adresse email:</label>
+                <input type="email" id="newUserEmail" required>
+
+                <label for="newUserPhone">Numéro de téléphone:</label>
+                <input type="tel" id="newUserPhone" required>
+
+                <label for="newUserPassword">Mot de passe:</label>
+                <input type="password" id="newUserPassword" required>
+
+                <button type="submit">Ajouter Utilisateur</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 <strong>LOCAVO</strong></p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

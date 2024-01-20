@@ -1,0 +1,57 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #333;
+}
+
+/* Style for customer info section */
+.customer-info {
+    margin-bottom: 20px;
+}
+
+/* Style for payment options section */
+.payment-options {
+    margin-bottom: 20px;
+}
+
+/* Style for rental summary section */
+.rental-summary {
+    margin-bottom: 20px;
+}
+
+/* Style for payment button */
+#payment-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#payment-button:hover {
+    background-color: #2980b9;
+}
